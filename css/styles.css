@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+    --color-accent: #ff6000;
+    --color-headings: #1e1e1e;
+    --color-body: #2e2e2e;
+  }
+  
+  *, *::after, *::before {
+    box-sizing: border-box;
+  }
+  
+body {
+    background-color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+
+/* Typography */
+
+html {
+    font-size: 62.5%;
+  }
+
+  body, input, textarea, button {
+    font-family: Hanken Grotesk, sans-serif;
+    font-size: 1.8rem;
+  }
+
+  section {
+    text-align: center;
+  }
+
+
+
+.btn {
+    padding: 15px 105px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 700;
+    display: block;
+    cursor: pointer;
+}
+.btn--solid:hover {
+    background: rgb(46,43,233);
+    background: linear-gradient(0deg, rgba(46,43,233,1) 0%, rgba(78,33,202,1) 100%);
+}
+
+.btn--solid {
+    background-color: hsl(224, 46%, 35%);
+    color: hsl(0, 0%, 100%);
+}
+
+.badges {
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+}
+.badges--red {
+    background-color: hsl(0, 100%, 67%, 0.1);
+}
+.badges--yellow {
+    background-color: hsl(39, 100%, 56%, 0.1);
+}
+.badges--green {
+    background-color: hsl(166, 100%, 37%, 0.1);
+}
+.badges--blue {
+    background-color: hsl(234, 85%, 45%, 0.1);
+}
+
+.badges--red p {
+    color: hsl(0, 100%, 67%);
+}
+.badges--yellow p {
+    color: hsl(39, 100%, 56%);
+}
+.badges--green p {
+    color: hsl(166, 100%, 37%);
+}
+.badges--blue p {
+    color: hsl(234, 85%, 45%);
+}
+
+.badges__icon {
+    display: flex;
+}
+
+.badges__text {
+    margin-left: 1.5rem;
+}
+
+.badges__numbers {
+    position: absolute;
+    right: 1.5rem;
+}
+
+.badges__numbers::after {
+    content: ' / 100';
+    opacity: 0.5;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.summary__content {
+    padding: 0 2rem;
+}
+
+.card {
+    max-width: 37.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+}
+.media {
+    height: 33.5rem;
+    width: 100%;
+    margin: 0;
+    background: rgb(46,43,233);
+    background: linear-gradient(0deg, rgba(46,43,233,1) 0%, rgba(78,33,202,1) 100%);
+    border-radius: 0 0 40px 40px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+
+.media__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0;
+    text-align: center;
+    width: 25rem;
+    line-height: 1
+}
+
+.media__text{
+    font-size: 1.5rem;
+}
+
+.media__content p {
+    font-size:1.6rem;
+    margin: 0;
+}
+.media__content h2 {
+    margin-bottom: 1rem;
+}
+
+.media__content h3, p {
+    opacity: 0.6;
+}
+
+.circle {
+    background: rgb(48,59,90);
+    background: linear-gradient(180deg, rgba(48,59,90,0.5) 0%, rgba(46,43,233,0.1) 100%);
+    border-radius: 90px;
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle__number {
+    font-size: 5rem;
+    font-weight: 800;
+}
+
+.circle__number::after {
+    content: 'of 100';
+    font-size: 1.7rem;
+    display: block;
+    opacity: 0.5;
+    transform: translateX(1px);
+}
+
+.attribution {
+    grid-column: 1 / span 2;
+}
+
+@media screen and (min-width: 1024px) {
+    .grid--1x2 {
+        grid-template-columns: repeat(2, 50%);  
+    }
+
+
+    .card { 
+        display: grid;
+        min-width: 73.5rem;
+        border-radius: 25px;
+    }
+    .media {
+        height: 100%;
+        border-radius: 25px;
+    }
+    .summary {
+        padding: 4rem 4rem;
+        width: 100%;
+    }
+    .heading h3 {
+        margin-bottom: 3rem;
+        margin-top: 0;
+    }
+    .circle {
+        margin: 2rem;
+    }
+    .media__content {
+        padding: 2rem;
+    }
+    .summary__content {
+        padding: 0;
+    }
+}

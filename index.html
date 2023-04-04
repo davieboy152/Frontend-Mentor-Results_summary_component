@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="card grid--1x2">
+        <div class="media">
+          <div class="media__content">
+            <h3>Your Result</h3>
+            <div class="circle">
+              <h1 class="circle__number">76</h1>
+            </div>
+            <h2>Great</h2>
+            <p>
+              You scored higher than 65% of people who have taken these tests
+            </p>
+          </div>
+        </div>
+        <div class="summary">
+          <div class="summary__content">
+            <div class="heading">
+              <h3>Summary</h3>
+            </div>
+            <div class="badges badges--red">
+              <div class="badges__icon">
+                <img src="/assets/images/icon-reaction.svg" alt="" />
+              </div>
+              <div class="badges__text"><p>Reaction</p></div>
+              <div class="badges__numbers">80</div>
+            </div>
+            <div class="badges badges--yellow">
+              <div class="badges__icon">
+                <img src="/assets/images/icon-memory.svg" alt="" />
+              </div>
+              <div class="badges__text"><p>Memory</p></div>
+              <div class="badges__numbers">92</div>
+            </div>
+            <div class="badges badges--green">
+              <div class="badges__icon">
+                <img src="/assets/images/icon-verbal.svg" alt="" />
+              </div>
+              <div class="badges__text"><p>Verbal</p></div>
+              <div class="badges__numbers">61</div>
+            </div>
+            <div class="badges badges--blue">
+              <div class="badges__icon">
+                <img src="/assets/images/icon-visual.svg" alt="" />
+              </div>
+              <div class="badges__text"><p>Visual</p></div>
+              <div class="badges__numbers">72</div>
+            </div>
+            <button href="#" class="btn btn--solid">Continue</button>
+          </div>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://www.frontendmentor.io/profile/davieboy152">davieboy152</a>.
+      </div>
+    </div>
+  </body>
+</html>
