@@ -9,7 +9,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: https://github.com/davieboy152/Frontend-Mentor-davieboy152-Frontend-Mentor-Results_summary_component
+- Solution URL: https://www.frontendmentor.io/solutions/responsive-results-summary-component-3FALJU8X2f
 - Live Site URL: https://soft-muffin-150ada.netlify.app/
 
 ## My process
